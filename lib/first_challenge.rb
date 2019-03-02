@@ -12,12 +12,7 @@ def first_challenge
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
-
-  contact.each do |person, data|
-    data.each do |att, v|
-      v.delete_if { |e| e == "strawberry" }
-
-
+  contacts["Freddy Mercury"][:favorite_icecream_flavors].delete_if { |e| e == "strawberry" }
 
   contacts
 end
